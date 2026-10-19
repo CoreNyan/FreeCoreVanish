@@ -1,0 +1,25 @@
+name: FreeCoreVanish
+version: '1.0.0'
+main: io.github.freecore.vanish.FreeCoreVanish
+api-version: '1.21'
+author: CoreNyan
+description: FreeCore Community Professional Vanish Plugin
+commands:
+  vanish:
+    description: 切换隐身状态
+    aliases: [v, fcvanish, fv]
+    permission: freecore.vanish.use
+  vanishreload:
+    description: 重载 FreeCoreVanish 配置文件与语言文件
+    aliases: [fvreload, vreload]
+    permission: freecore.vanish.admin
+permissions:
+  freecore.vanish.use:
+    description: 允许使用 /vanish 切换隐身
+    default: op
+  freecore.vanish.view:
+    description: 允许看见其他隐身中的玩家
+    default: op
+  freecore.vanish.admin:
+    description: 允许使用重载等管理指令
+    default: op

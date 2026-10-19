@@ -1,0 +1,13 @@
+# FreeCore 格式规范语言配置 (严格符合 FreeCorePluginFormat_New)
+# 规范要求：带加粗鲜明中文前缀，后接 &f&l>>> &f，单色为主，全角标点
+
+prefix: " &b&l隐身 &f&l>>> &f"
+
+messages:
+  vanish-enabled: "&a你已进入隐身状态！其他普通玩家将无法察觉到你。"
+  vanish-disabled: "&c你已解除隐身状态，重新对全体玩家可见。"
+  vanish-actionbar: "&b&l[隐身模式开启中] &7其他玩家无法察觉到你"
+  silent-join: "&6你以隐身模式静音加入了服务器。"
+  no-permission: "&c抱歉，你没有权限执行此指令！"
+  reload-success: "&a配置文件与语言文件已成功重新加载！"
+  only-player: "&c该指令只能由游戏内玩家执行！"

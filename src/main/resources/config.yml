@@ -1,0 +1,30 @@
+# FreeCoreVanish 核心配置
+# 由小可（CoreNyan）为 FreeCore 精心定制
+
+# Redis 跨服同步配置
+redis:
+  enabled: true
+  host: 127.0.0.1
+  port: 6666
+  password: "改我"
+  # Redis 状态缓存键前缀，结构为 freecore:vanish:<UUID>
+  key-prefix: "freecore:vanish:"
+  # 跨服代理端（FCTabBridge / Velocity）同步通知频道
+  publish-channel: "fctransfer:vanish"
+
+# 行为保护配置
+features:
+  # 静音开启容器（箱子、木桶、潜影盒、末影箱等无开箱动画与声音）
+  silent-containers: true
+  # 清除周围生物对隐身玩家的仇恨目标
+  clear-mob-targets: true
+  # 隐身状态下自动忽略入睡判定
+  ignore-sleep: true
+  # 隐身状态下不影响周围刷怪判定
+  disable-mob-spawning: true
+  # 隐身时是否允许飞行
+  allow-flight: true
+  # 隐身时是否自动赋予夜视效果
+  night-vision: true
+  # 跨服时是否保持隐身状态（由 Redis 统一记录）
+  persist-across-servers: true
